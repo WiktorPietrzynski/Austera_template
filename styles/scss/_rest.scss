@@ -8,10 +8,11 @@
 	scroll-behavior: smooth;
 }
 
-html{
+html {
 	font-size: clamp(16px, 1vw, 36px)
 }
-body{
-	width:100%;
-}
 
+body {
+	width: 100%;
+	overflow-x: hidden;
+}
