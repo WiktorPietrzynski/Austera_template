@@ -168,7 +168,7 @@
               class="services-full__img"
             />
             <div class="services-full__right">
-              <h3 class="title title--big title--black">
+              <h3 class="title title--medium title--black">
                 Lorem ipsum dolor sit amet
               </h3>
               <p class="txt">
@@ -274,7 +274,7 @@
         </div>
       </section>
       <section class="section section-contact" id="contact">
-        <div class="contact__desc">
+        <div class="section-contact__left">
           <h2 class="title title--medium">Contact with us</h2>
           <address class="address">
             <span class="address__txt"></span>
@@ -282,16 +282,34 @@
             <span class="address__txt"></span>
           </address>
         </div>
-        <form action="" class="contact-form">
-          <input name="name" type="text" class="contact-form__input" />
-          <input name="email" type="email" class="contact-form__input" />
+        <form action="#" class="section-contact__form">
+          <label for="name" class="section-contact__label">Your name</label>
+          <input
+            name="name"
+            type="text"
+            class="section-contact__input"
+            placeholder="Your name"
+          />
+          <label for="email" class="section-contact__label"
+            >Your e-mail address</label
+          >
+          <input
+            name="email"
+            type="email"
+            class="section-contact__input"
+            placeholder="Your e-mail address"
+          />
+          <label for="message" class="section-contact__label"
+            >Your message</label
+          >
           <textarea
             name="message"
             cols="30"
             rows="10"
-            class="contact-form__txtarea"
+            class="section-contact__txtarea"
+            placeholder="Your message"
           ></textarea>
-          <button type="button" class="button button-radius">
+          <button type="button" class="button button--radius">
             Send message
           </button>
         </form>

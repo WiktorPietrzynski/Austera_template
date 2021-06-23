@@ -16,6 +16,8 @@
   align-items: center;
   flex-direction: column;
   gap: 1.5rem;
+  padding: 1rem;
+  text-align: center;
 }
 
 
@@ -26,8 +28,8 @@
   align-items: center;
 
   &--top {
-    margin-top: 5%;
-    background: linear-gradient(145deg, white 50%, $base-color 50%);
+    padding-top: 2rem;
+    background: linear-gradient(130deg, white 50%, $base-color 50%);
     gap: 100px;
   }
 
@@ -51,10 +53,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 25px;
 }
 
 .icon {
-  width: 25%;
+  width: 225px;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -66,33 +69,33 @@
   }
 
   &__title {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   &__desc {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: gray;
   }
 }
 
 .services-laptop {
-  margin-top: 10%;
-  width: 70%;
+  padding-top: 10%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 
   &__left {
-    width: 35%;
+    width: clamp(350px, 40%, 40%);
+    padding: 5%;
     display: flex;
     flex-direction: column;
     gap: 35px;
   }
 
   &__img {
-    width: 65%;
+    width: clamp(350px, 60%, 700px);
     height: auto;
-    object-fit: contain;
-    object-position: right;
   }
 
   &__desc {
@@ -103,21 +106,21 @@
 
 
 .services-device {
-  margin-top: 10%;
-  margin-bottom: 10%;
-  width: 70%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 
   &__img {
-    width: 50%;
+    width: clamp(350px, 50%, 500px);
     height: auto;
-    object-fit: contain;
   }
 
   &__right {
-    width: 40%;
+    width: clamp(350px, 40%, 500px);
+    padding: 5%;
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -132,18 +135,22 @@
 .services-full {
   display: flex;
   width: 100%;
+  height: clamp(230px, auto, auto);
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   &__img {
-    width: 50%;
+    width: clamp(350px, 50%, 50%);
   }
 
   &__right {
-    margin-left: 5%;
-    width: 30%;
+    width: clamp(350px, 50%, 50%);
+    padding: 7.5%;
     display: flex;
     flex-direction: column;
     gap: 40px;
     justify-content: center;
+    align-items: center;
   }
 
   &__desc {
@@ -155,11 +162,12 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .tile {
   position: relative;
-  width: 25%;
+  width: clamp(300px, 25%, 25%);
   height: 300px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -214,19 +222,20 @@
 
 .section-team {
   width: 100%;
-  padding-left: 15%;
+  padding-left: 7.5%;
   padding-top: 7.5%;
 }
 
 .card-list {
-  padding-top: 7.5%;
   width: 85%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
-  width: 25%;
+  padding-top: 5%;
+  width: clamp(250px, 25%, 25%);
   height: auto;
   display: flex;
   flex-direction: column;
@@ -251,5 +260,44 @@
   &__button {
     width: 150px;
     color: white;
+  }
+}
+
+
+.section-contact {
+  width: 100%;
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-around;
+  background-image: url("../../assets/images/bg_bot.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  &__left {
+    padding: 5%;
+  }
+
+  &__form {
+    width: clamp(350px, 35%, 35%);
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__label {
+    width: 100%;
+    visibility: hidden;
+  }
+
+  &__input {
+    line-height: 2.5rem;
+    width: 100%;
+  }
+
+  &__txtarea {
+    width: 100%;
+    resize: none;
   }
 }

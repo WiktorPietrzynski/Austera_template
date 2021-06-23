@@ -1,51 +1,50 @@
 .txt--cyan {
-    color: $base-color;
+  color: $base-color;
+}
+
+.title {
+  color: white;
+
+  &--big {
+    font-size: 3.5rem;
   }
 
-  .title {
-    padding: 16px;
-    color: white;
-
-    &--big {
-      font-size: 3.5rem;
-    }
-
-    &--medium {
-      font-size: 3rem;
-    }
-
-    &--small {
-      font-size: 1.5rem;
-    }
-
-    &--black {
-      color: black;
-    }
+  &--medium {
+    font-size: 3rem;
   }
 
-  .button {
-    background-color: $base-color;
-    width: 175px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    transition: transform 0.2s linear, box-shadow 0.2s linear;
-
-    &--white {
-      background-color: white;
-    }
-
-    &--radius {
-      border-radius: 40px;
-    }
-
-    &:hover,
-    :focus {
-      box-shadow: 0 0.5rem 0.5rem -0.4rem $base-color;
-      transform: translateY(-0.25rem);
-    }
-
-    &:active {
-      transform: scale(0.85);
-    }
+  &--small {
+    font-size: 1.5rem;
   }
+
+  &--black {
+    color: black;
+  }
+}
+
+.button {
+  background-color: $base-color;
+  width: 175px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  transition: transform 0.2s linear, box-shadow 0.2s linear;
+
+  &--white {
+    background-color: white;
+  }
+
+  &--radius {
+    border-radius: 40px;
+  }
+
+  &:hover,
+  :focus {
+    box-shadow: 0 0.5rem 0.5rem -0.4rem $base-color;
+    transform: translateY(-0.25rem);
+  }
+
+  &:active {
+    transform: scale(0.85);
+  }
+}
