@@ -1,3 +1,22 @@
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 0;
+  padding: 0 0;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: clamp(16px, 1vw, 36px);
+}
+
+body {
+  width: 100%;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -34,7 +53,7 @@ main {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0;
 }
 
 /* Grouping content
@@ -339,5 +358,174 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  z-index: 2;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  color: #fff;
+  width: 20%;
+}
+
+.nav-container {
+  margin-left: 35%;
+  margin-right: 5%;
+  width: 40%;
+}
+
+.nav {
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  font-size: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__item {
+  color: white;
+}
+
+.nav__link {
+  position: relative;
+  color: white;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+  z-index: 1;
+}
+
+.nav__link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: cyan;
+  visibility: hidden;
+  border-radius: 5px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: visibility .2s linear, -webkit-transform .2s linear;
+  transition: visibility .2s linear, -webkit-transform .2s linear;
+  transition: transform .2s linear, visibility .2s linear;
+  transition: transform .2s linear, visibility .2s linear, -webkit-transform .2s linear;
+}
+
+.nav__link:hover {
+  color: cyan;
+}
+
+.nav__link:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.main-container {
+  width: 100%;
+}
+
+.section {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.txt--cyan {
+  color: cyan;
+}
+
+.title {
+  color: white;
+}
+
+.title--big {
+  font-size: 3rem;
+}
+
+.title--medium {
+  font-size: 2rem;
+}
+
+.title--small {
+  font-size: 1rem;
+}
+
+.section-home {
+  width: 100%;
+  background-image: url("../../assets/images/bg_top.png");
+  background-size: cover;
+  margin: -1px -1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+.button {
+  background-color: cyan;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear;
+  transition: -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear;
+  transition: transform 0.2s linear, box-shadow 0.2s linear;
+  transition: transform 0.2s linear, box-shadow 0.2s linear, -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear;
+}
+
+.button--radius {
+  border-radius: 40px;
+}
+
+.button:hover, .button :focus {
+  -webkit-box-shadow: 0 0.5rem 0.5rem -0.4rem cyan;
+          box-shadow: 0 0.5rem 0.5rem -0.4rem cyan;
+  -webkit-transform: translateY(-0.25rem);
+          transform: translateY(-0.25rem);
+}
+
+.button:active {
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
 }
 /*# sourceMappingURL=main.css.map */

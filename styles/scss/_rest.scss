@@ -1,0 +1,17 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0 0;
+	padding: 0 0;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+
+html{
+	font-size: clamp(16px, 1vw, 36px)
+}
+body{
+	width:100%;
+}
+
