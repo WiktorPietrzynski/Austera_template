@@ -9,7 +9,7 @@
 }
 
 html {
-	font-size: clamp(16px, 1vw, 36px)
+	font-size: clamp(16px, 0.8vw, 36px)
 }
 
 body {
@@ -23,4 +23,8 @@ button {
 	text-align: center;
 	text-decoration: none;
 	font-size: 1rem;
+}
+
+a:visited {
+	color: inherit;
 }
