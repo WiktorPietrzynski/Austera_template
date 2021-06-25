@@ -381,11 +381,11 @@ template {
 }
 
 .title--big {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .title--medium {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .title--small {
@@ -481,10 +481,10 @@ template {
 
 .nav__link {
   position: relative;
-  color: white;
   -webkit-transition: color 0.2s linear;
   transition: color 0.2s linear;
   z-index: 1;
+  color: white;
 }
 
 .nav__link::before {
@@ -527,14 +527,17 @@ template {
     cursor: pointer;
   }
   .menu__bar {
+    display: block;
     width: 30px;
     height: 2px;
     margin: 7px auto;
     background-color: #fff;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
     -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
             box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
+    -webkit-transition: background-color 0.3s ease-in-out, margin-bottom 0.3s ease-in-out, margin-top 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, margin-bottom 0.3s ease-in-out, margin-top 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, margin-bottom 0.3s ease-in-out, margin-top 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, margin-bottom 0.3s ease-in-out, margin-top 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
   }
   .menu__bar:nth-child(2) {
     width: 20px;
@@ -620,8 +623,8 @@ template {
     margin-left: 10px;
   }
   .nav__link {
-    position: relative;
     color: white;
+    position: relative;
     -webkit-transition: color 0.2s linear;
     transition: color 0.2s linear;
     z-index: 1;

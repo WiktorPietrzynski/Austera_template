@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <meta
+      name="description"
+      content="Strona stworzona w celu ćwiczenia realizacji projektów, wykorzystując poznane technologie"
+    />
+    <meta
+      name="keywords"
+      content="tworzenie stron www,strona,projektowanie stron internetowych,programowanie,programista,front-end,junior,html,css,sass,scss"
+    />
     <link rel="stylesheet" type="text/css" href="styles/css/main.css" />
-    <title>Austera</title>
+    <title>Austera - Wiktor Pietrzyński</title>
   </head>
 
   <body>
@@ -19,9 +28,9 @@
       >
       <input type="checkbox" class="menu" id="menu" />
       <label class="menu__button" for="menu">
-        <div class="menu__bar"></div>
-        <div class="menu__bar"></div>
-        <div class="menu__bar"></div>
+        <span class="menu__bar"></span>
+        <span class="menu__bar"></span>
+        <span class="menu__bar"></span>
       </label>
       <nav class="nav">
         <ul class="nav__list">
@@ -52,7 +61,7 @@
           target="_blank"
           href="https://symu.co/freebies/templates-4/austera-psd-template/"
           class="button button--radius"
-          >Learn more</a
+          >learn more</a
         >
       </section>
       <section class="section section-services" id="services">
@@ -203,7 +212,7 @@
                 target="_blank"
                 href="https://symu.co/freebies/templates-4/austera-psd-template/"
                 class="button button--radius"
-                >Learn more</a
+                >learn more</a
               >
             </div>
           </div>
@@ -392,6 +401,7 @@
         <form action="#" class="section-contact__form">
           <label for="name" class="section-contact__label">Your name</label>
           <input
+            id="name"
             name="name"
             type="text"
             class="section-contact__input"
@@ -401,6 +411,7 @@
             >Your e-mail address</label
           >
           <input
+            id="email"
             name="email"
             type="email"
             class="section-contact__input"
@@ -410,6 +421,7 @@
             >Your message</label
           >
           <textarea
+            id="message"
             name="message"
             cols="30"
             rows="10"

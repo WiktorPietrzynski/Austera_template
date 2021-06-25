@@ -49,9 +49,10 @@
 
     &__link {
         position: relative;
-        color: white;
         transition: color 0.2s linear;
         z-index: 1;
+        color: white;
+
 
         &::before {
             content: "";
@@ -93,12 +94,13 @@
     }
 
     .menu__bar {
+        display: block;
         width: 30px;
         height: 2px;
         margin: 7px auto;
         background-color: #fff;
-        transition: all 0.3s ease-in-out;
         box-shadow: 0 0 3px 1px rgba(0, 0, 0, .3);
+        transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, margin-bottom 0.3s ease-in-out, margin-top 0.3s ease-in-out;
     }
 
     .menu__bar:nth-child(2) {
@@ -174,8 +176,8 @@
         }
 
         &__link {
-            position: relative;
             color: white;
+            position: relative;
             transition: color 0.2s linear;
             z-index: 1;
 
