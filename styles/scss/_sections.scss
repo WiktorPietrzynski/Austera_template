@@ -152,7 +152,7 @@
   width: 100%;
   height: clamp(230px, auto, auto);
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 
   &__img {
     width: clamp(350px, 50%, 50%);
@@ -250,11 +250,11 @@
 
 .card {
   padding-top: 5%;
+  padding-bottom: 5%;
   width: clamp(250px, 25%, 25%);
   height: auto;
   display: flex;
   flex-direction: column;
-  gap: 15px;
   align-items: center;
 
   &__img {
@@ -286,10 +286,11 @@
   justify-content: center;
   background-image: url("../../assets/images/bg_bot.png");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 
   &__left {
     width: clamp(350px, 50%, 550px);
+    height: auto;
     padding: 5%;
   }
 
@@ -320,12 +321,25 @@
 
 .address {
   &__txt {
-    margin: 5%;
+    margin-top: 5%;
     font-size: 1rem;
     color: gray;
 
     &--big {
       font-size: 1.75rem;
     }
+  }
+}
+
+.contact-icons {
+  padding-top: 15%;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__img {
+    width: 48px;
+    height: auto;
   }
 }

@@ -17,8 +17,14 @@
         class="logo"
         >Austera</a
       >
-      <nav class="nav-container">
-        <ul class="nav">
+      <input type="checkbox" class="menu" id="menu" />
+      <label class="menu__button" for="menu">
+        <div class="menu__bar"></div>
+        <div class="menu__bar"></div>
+        <div class="menu__bar"></div>
+      </label>
+      <nav class="nav">
+        <ul class="nav__list">
           <li class="nav__item">
             <a href="#home" class="nav__link">Homepage</a>
           </li>
@@ -287,6 +293,59 @@
               E-mail: <span class="txt--cyan">contact@austera.co</span>
             </p>
           </address>
+          <div class="contact-icons">
+            <a
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              href="https://twitter.com"
+            >
+              <img
+                src="../assets/images/twitter.png"
+                alt="twitter icon"
+                class="contact-icons__img"
+            /></a>
+            <a
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              href="https://facebook.com"
+            >
+              <img
+                src="../assets/images/facebook.png"
+                alt="facebook icon"
+                class="contact-icons__img"
+              />
+            </a>
+            <a
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              href="https://pinterest.com"
+            >
+              <img
+                src="../assets/images/pinterest.png"
+                alt="pinterest icon"
+                class="contact-icons__img"
+            /></a>
+            <a
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              href="https://google.com"
+            >
+              <img
+                src="../assets/images/google_plus.png"
+                alt="google+ icon"
+                class="contact-icons__img"
+            /></a>
+            <a
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              href="https://linkedin.com"
+            >
+              <img
+                src="../assets/images/linkedin.png"
+                alt="linkedin icon"
+                class="contact-icons__img"
+            /></a>
+          </div>
         </div>
         <form action="#" class="section-contact__form">
           <label for="name" class="section-contact__label">Your name</label>
@@ -322,21 +381,9 @@
       </section>
     </main>
     <footer class="main-footer">
-      <ul class="nav">
-        <li class="nav__item">
-          <a href="#home" class="nav__link">Homepage</a>
-        </li>
-        <li class="nav__item">
-          <a href="#services" class="nav__link">Services</a>
-        </li>
-        <li class="nav__item">
-          <a href="#team" class="nav__link">About us</a>
-        </li>
-        <li class="nav__item">
-          <a href="#contact" class="nav__link">Contact us</a>
-        </li>
-      </ul>
-      <p>Copyright &copy; 2015. All rights reserved</p>
+      <p class="main-footer__text">
+        Copyright &copy; 2015. All rights reserved by MountTec
+      </p>
     </footer>
   </body>
 </html>
