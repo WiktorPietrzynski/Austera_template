@@ -1,7 +1,15 @@
 # Austera
 ## PSD to HTML5 and CSS3
-Template: https://symu.co/freebies/templates-4/austera-psd-template/
+This template was mainly for desktop, but I decided to make it responsive.
+
+That's why it's not "pixel-perfect".
+
+Template: https://symu.co/freebies/templates-4/austera-psd-template/  
+
 Live: https://wiktorpietrzynski.github.io/Austera_template/
+
+
+
 
 ## Technologies:
 
