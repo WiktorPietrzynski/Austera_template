@@ -17,6 +17,10 @@ Live: https://wiktorpietrzynski.github.io/Austera_template/
 [![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3)]()
 [![Sass](https://img.shields.io/badge/-Sass-pink?style=flat-square&logo=Sass)]()
 
+
+
+## Screenshots:
+
 Homepage.
 ![homepage](/screenshots/homepage.png "homepage")
 
