@@ -25,7 +25,7 @@ Services 4.
 ![services_4](/screenshots/services_4.png "services 4")
 
 About us.
-![abouts_us](/screenshots/abous_us.png "about us")
+![about_us](/screenshots/about_us.png "about us")
 
 Contact us.
 ![contact_us](/screenshots/contact_us.png "contact us")
