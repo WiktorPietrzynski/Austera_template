@@ -1,8 +1,8 @@
 # Austera
 ## PSD to HTML5 and CSS3
-This template was mainly for desktop, but I decided to make it responsive.
+This template was primarily intended for desktops, but I chose to code it responsive.
 
-That's why it's not "pixel-perfect".
+Therefore, it is not "pixel perfect".
 
 Template: https://symu.co/freebies/templates-4/austera-psd-template/  
 
